@@ -240,7 +240,7 @@ footer {
 
     <div class="buttons">
 
-    <form action="https://formspree.io/f/mqeyopeg" method="POST" style="display:inline-block; margin-top:10px;">
+    <form id="mavenForm" action="https://formspree.io/f/mqeyopeg" method="POST" style="display:inline-block; margin-top:10px;">
 
         <input type="text" name="name" placeholder="Your Name" required 
         style="padding:10px; margin:5px; border-radius:5px; border:none; width:200px;">
@@ -286,3 +286,28 @@ footer {
         A system by EVO Engineering © 2026
     </div>
 </footer>
+<script>
+const form = document.getElementById('mavenForm');
+
+form.addEventListener('submit', async function(e) {
+    e.preventDefault();
+
+    const data = new FormData(form);
+
+    try {
+        await fetch(form.action, {
+            method: "POST",
+            body: data,
+            headers: {
+                'Accept': 'application/json'
+            }
+        });
+
+        // ✅ FORCE YOUR REDIRECT
+        window.location.href = "https://maven.evo.engineering/thank-you.html";
+
+    } catch (error) {
+        alert("Something went wrong. Please try again.");
+    }
+});
+</script>
