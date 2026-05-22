@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://maven.evo.engineering/sitemap.xml
+Sitemap: https://mavencompliance.systems/sitemap.xml
