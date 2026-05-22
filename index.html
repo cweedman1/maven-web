@@ -11,6 +11,8 @@
 
 <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preload" as="image" href="assets/hero/hero-operations-center-1800.webp" type="image/webp" media="(min-width: 721px)">
+<link rel="preload" as="image" href="assets/hero/hero-operations-center-960.webp" type="image/webp" media="(max-width: 720px)">
 <link rel="stylesheet" href="styles.css">
 
 <meta property="og:title" content="Maven Compliance Intelligence">
@@ -58,16 +60,73 @@
 </header>
 
 <main>
-    <section class="hero" aria-labelledby="home-title">
+    <section class="hero hero-atmosphere hero-home" aria-labelledby="home-title">
         <h1 id="home-title">Maven</h1>
         <p>Turn deficiencies into action &mdash; instantly.</p>
         <p class="muted">Compliance intelligence for healthcare teams working through survey response, investigations, and QAPI improvement.</p>
+        <div class="signal-row" aria-label="Maven operational focus">
+            <span class="status-pill">Survey Response</span>
+            <span class="status-pill neutral">Incident Review</span>
+            <span class="status-pill neutral">QAPI Loop</span>
+            <span class="status-pill warning">Risk Signals</span>
+        </div>
+    </section>
+
+    <section class="section texture-section texture-workflow" aria-labelledby="workflow-title">
+        <div class="section-inner">
+        <div class="section-header">
+            <div class="section-header-main">
+                <span class="section-label">Operational Workflow</span>
+                <h2 id="workflow-title">From citation intake to defensible documentation</h2>
+                <p>Maven organizes the compliance response path into repeatable stages administrators can review, refine, and track.</p>
+            </div>
+        </div>
+
+        <div class="workflow-band" aria-label="Maven compliance workflow sequence">
+            <div class="workflow-step">
+                <span class="workflow-index">01</span>
+                <span class="workflow-title">Intake</span>
+                <span class="workflow-copy">Survey findings, incident narratives, and facility data enter a structured workflow.</span>
+            </div>
+            <div class="workflow-step">
+                <span class="workflow-index">02</span>
+                <span class="workflow-title">Classify</span>
+                <span class="workflow-copy">Tags, severity, root cause, and documentation gaps are separated from raw text.</span>
+            </div>
+            <div class="workflow-step">
+                <span class="workflow-index">03</span>
+                <span class="workflow-title">Generate</span>
+                <span class="workflow-copy">Plans, findings, and monitoring language are drafted in an operational format.</span>
+            </div>
+            <div class="workflow-step">
+                <span class="workflow-index">04</span>
+                <span class="workflow-title">Review</span>
+                <span class="workflow-copy">Teams validate the response before it becomes part of the compliance record.</span>
+            </div>
+            <div class="workflow-step">
+                <span class="workflow-index">05</span>
+                <span class="workflow-title">Improve</span>
+                <span class="workflow-copy">Recurring patterns feed QAPI priorities and survey readiness work.</span>
+            </div>
+        </div>
+        </div>
     </section>
 
     <section class="section" id="demo" aria-labelledby="demo-title">
-        <h2 id="demo-title">See It Work</h2>
+        <div class="section-header">
+            <div class="section-header-main">
+                <span class="section-label">Product View</span>
+                <h2 id="demo-title">See It Work</h2>
+                <p>Maven presents compliance work as a structured operational record, not a loose document draft.</p>
+            </div>
+            <span class="status-pill neutral">Demo</span>
+        </div>
 
-        <div class="video-container">
+        <div class="screenshot-frame">
+            <div class="screenshot-frame-header">
+                <span class="screenshot-frame-title">Maven Compliance Intelligence</span>
+                <span>POC workflow demonstration</span>
+            </div>
             <video controls muted playsinline preload="metadata" poster="assets/demo-poster.jpg" aria-label="Maven product demonstration">
                 <source src="assets/demo-optimized.webm" type="video/webm">
                 <source src="assets/demo-optimized.mp4" type="video/mp4">
@@ -77,23 +136,121 @@
     </section>
 
     <section class="section" aria-labelledby="modules-title">
-        <h2 id="modules-title">Core Workflows</h2>
+        <div class="section-header">
+            <div class="section-header-main">
+                <span class="section-label">Platform Modules</span>
+                <h2 id="modules-title">Connected compliance workflows</h2>
+                <p>The primary engines handle response, investigation, and continuous improvement while supporting modules preserve operational context.</p>
+            </div>
+        </div>
 
-        <div class="modules">
-            <a href="poc.html" class="module">
-                <h3>POC</h3>
-                <p>Generate regulator-ready plans of correction in minutes.</p>
+        <div class="platform-grid">
+            <a href="poc.html" class="module-panel">
+                <div class="module-panel-header">
+                    <h3>POC Engine</h3>
+                    <span class="status-pill">Primary</span>
+                </div>
+                <p>Generate regulator-ready plans of correction from survey deficiencies and required monitoring actions.</p>
+                <ul class="module-list">
+                    <li>CMS 2567 intake</li>
+                    <li>Corrective action structure</li>
+                    <li>Monitoring and documentation language</li>
+                </ul>
             </a>
 
-            <a href="investigations.html" class="module">
-                <h3>Investigations</h3>
-                <p>Turn raw narrative into structured, defensible reports.</p>
+            <a href="investigations.html" class="module-panel">
+                <div class="module-panel-header">
+                    <h3>Investigation Engine</h3>
+                    <span class="status-pill">Primary</span>
+                </div>
+                <p>Turn raw incident narratives into structured findings, timeline review, and defensible documentation.</p>
+                <ul class="module-list">
+                    <li>Incident narrative parsing</li>
+                    <li>Root cause and gap review</li>
+                    <li>Audit-ready report structure</li>
+                </ul>
             </a>
 
-            <a href="intelligence.html" class="module">
-                <h3>Intelligence</h3>
-                <p>Surface operational risk before it becomes citations.</p>
+            <a href="intelligence.html" class="module-panel">
+                <div class="module-panel-header">
+                    <h3>QAPI Intelligence</h3>
+                    <span class="status-pill">Primary</span>
+                </div>
+                <p>Surface operational risk patterns across investigations, POCs, CASPER data, and facility history.</p>
+                <ul class="module-list">
+                    <li>Recurring risk detection</li>
+                    <li>QAPI planning support</li>
+                    <li>Survey readiness priorities</li>
+                </ul>
             </a>
+        </div>
+
+        <div class="platform-grid supporting" aria-label="Supporting Maven platform capabilities">
+            <div class="module-panel secondary">
+                <div class="module-panel-header">
+                    <h3>Survey Risk Analysis</h3>
+                    <span class="status-pill warning">Risk</span>
+                </div>
+                <p>Identify survey exposure before it becomes a repeat deficiency.</p>
+            </div>
+
+            <div class="module-panel secondary">
+                <div class="module-panel-header">
+                    <h3>Deficiency Mapping</h3>
+                    <span class="status-pill neutral">Tags</span>
+                </div>
+                <p>Connect cited issues to root cause, correction, and monitoring steps.</p>
+            </div>
+
+            <div class="module-panel secondary">
+                <div class="module-panel-header">
+                    <h3>CASPER Review</h3>
+                    <span class="status-pill neutral">QAPI</span>
+                </div>
+                <p>Use facility performance context to support continuous improvement.</p>
+            </div>
+
+            <div class="module-panel secondary">
+                <div class="module-panel-header">
+                    <h3>Compliance Documentation</h3>
+                    <span class="status-pill neutral">Record</span>
+                </div>
+                <p>Keep outputs structured, reviewable, and aligned with survey expectations.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section texture-section texture-journal" aria-labelledby="docs-title">
+        <div class="section-inner">
+        <div class="section-header">
+            <div class="section-header-main">
+                <span class="section-label">Manual Layer</span>
+                <h2 id="docs-title">Procedural guidance stays close to the workflow</h2>
+                <p>Maven's documentation layer supports administrators who need clear examples, definitions, and compliance response patterns.</p>
+            </div>
+        </div>
+
+        <div class="doc-grid">
+            <a href="how-to-write-plan-of-correction.html" class="doc-card">
+                <strong>POC Guide</strong>
+                <span>Step-by-step response structure for nursing home deficiencies.</span>
+            </a>
+
+            <a href="what-is-qapi.html" class="doc-card">
+                <strong>QAPI Guide</strong>
+                <span>Operational context for quality assurance and improvement work.</span>
+            </a>
+
+            <a href="incident-investigation-report-example.html" class="doc-card">
+                <strong>Investigation Guide</strong>
+                <span>Example structure for defensible incident documentation.</span>
+            </a>
+
+            <a href="nursing-home-deficiency-examples.html" class="doc-card">
+                <strong>Deficiency Examples</strong>
+                <span>Common patterns, causes, corrections, and monitoring practices.</span>
+            </a>
+        </div>
         </div>
     </section>
 
