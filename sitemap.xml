@@ -17,6 +17,35 @@
     <loc>https://mavencompliance.systems/intelligence.html</loc>
   </url>
 
+  <!-- Knowledge Center -->
+  <url>
+    <loc>https://mavencompliance.systems/knowledge.html</loc>
+  </url>
+
+  <url>
+    <loc>https://mavencompliance.systems/plans-of-correction.html</loc>
+  </url>
+
+  <url>
+    <loc>https://mavencompliance.systems/qapi.html</loc>
+  </url>
+
+  <url>
+    <loc>https://mavencompliance.systems/survey-deficiencies.html</loc>
+  </url>
+
+  <url>
+    <loc>https://mavencompliance.systems/investigation-resources.html</loc>
+  </url>
+
+  <url>
+    <loc>https://mavencompliance.systems/casper-facility-intelligence.html</loc>
+  </url>
+
+  <url>
+    <loc>https://mavencompliance.systems/regulatory-references.html</loc>
+  </url>
+
   <!-- SEO Pages -->
   <url>
     <loc>https://mavencompliance.systems/how-to-write-plan-of-correction.html</loc>
@@ -27,11 +56,11 @@
   </url>
 
   <url>
-    <loc>https://mavencompliance.systems/incident-investigation-report-example.html</loc>
+    <loc>https://mavencompliance.systems/nursing-home-deficiency-examples.html</loc>
   </url>
 
   <url>
-    <loc>https://mavencompliance.systems/nursing-home-deficiency-examples.html</loc>
+    <loc>https://mavencompliance.systems/incident-investigation-report-example.html</loc>
   </url>
 
 </urlset>
