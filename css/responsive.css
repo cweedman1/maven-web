@@ -1,0 +1,239 @@
+@media (max-width: 720px) {
+    .nav {
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        max-width: 100%;
+        padding: 12px 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px 14px;
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .nav-links a {
+        flex: 0 1 auto;
+        white-space: nowrap;
+    }
+
+    .hero {
+        padding: 72px 20px 40px;
+    }
+
+    .hero-small {
+        padding: 64px 20px 36px;
+    }
+
+    .hero-atmosphere {
+        min-height: 390px;
+        padding-top: 76px;
+    }
+
+    .hero-small.hero-atmosphere {
+        min-height: 310px;
+        padding-top: 70px;
+        padding-bottom: 44px;
+    }
+
+    .hero-home {
+        --hero-bg: url("../assets/hero/homepage_hero_new-960.webp");
+        --hero-position: center 44%;
+    }
+
+    .hero-knowledge {
+        --hero-bg: url("../assets/hero/knowledgecenter_hero-960.webp");
+        --hero-position: center 48%;
+    }
+
+    .hero-qapi {
+        --hero-bg: url("../assets/hero/qapi_hero-960.webp");
+        --hero-position: center 46%;
+    }
+
+    .hero-casper {
+        --hero-bg: url("../assets/hero/casper_hero-960.webp");
+        --hero-position: center 45%;
+    }
+
+    .hero-regulatory {
+        --hero-bg: url("../assets/hero/regulatory_hero-960.webp");
+        --hero-position: center 50%;
+    }
+
+    .hero-compliance {
+        --hero-bg: url("../assets/hero/hero-compliance-documents-960.webp");
+        --hero-position: center 48%;
+    }
+
+    .hero-investigations {
+        --hero-bg: url("../assets/hero/hero-investigations-960.webp");
+        --hero-position: center 28%;
+    }
+
+    .hero-intelligence {
+        --hero-bg: url("../assets/hero/hero-system-intelligence-960.webp");
+        --hero-position: center 48%;
+    }
+
+    .hero h1 {
+        font-size: 44px;
+    }
+
+    .hero-small h1 {
+        font-size: 34px;
+    }
+
+    .hero p,
+    .hero-small p {
+        font-size: 16px;
+    }
+
+    .section,
+    .content {
+        padding: 40px 18px;
+    }
+
+    .texture-section > .section-inner {
+        padding: 40px 18px;
+    }
+
+    .texture-workflow > .section-inner {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+
+    #demo {
+        padding-bottom: 54px;
+    }
+
+    #modules {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+
+    #access.section.compact {
+        padding-top: 56px;
+    }
+
+    .section-header {
+        display: block;
+    }
+
+    .platform-grid,
+    .platform-grid.supporting,
+    .doc-grid,
+    .resource-layout {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .workflow-band {
+        grid-template-columns: 1fr;
+    }
+
+    .workflow-step {
+        min-height: 0;
+        border-right: 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .workflow-step:last-child {
+        border-bottom: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav {
+        padding-right: 14px;
+        padding-left: 14px;
+    }
+
+    .nav-links {
+        gap: 8px 12px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+        line-height: 1.25;
+    }
+
+    .logo {
+        width: 52px;
+        height: 52px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero p,
+    .hero-small p {
+        max-width: 100%;
+        overflow-wrap: break-word;
+    }
+
+    .signal-row {
+        max-width: 100%;
+        justify-content: center;
+    }
+
+    .hero-small h1 {
+        font-size: 30px;
+    }
+
+    .modules {
+        grid-template-columns: 1fr;
+    }
+
+    .platform-grid,
+    .platform-grid.supporting,
+    .doc-grid,
+    .resource-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .module-panel,
+    .module-panel.secondary {
+        padding: 18px;
+    }
+
+    #modules .platform-grid.supporting .module-panel.secondary,
+    .texture-journal .doc-card {
+        padding: 16px;
+    }
+
+    .module-panel-header,
+    .screenshot-frame-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .field {
+        max-width: none;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 280px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.001ms !important;
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+    }
+}

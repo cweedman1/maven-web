@@ -1,0 +1,27 @@
+.site-footer {
+    text-align: center;
+    padding: 56px 20px;
+    color: #777;
+    font-size: 14px;
+}
+
+.footer-links,
+.footer-meta {
+    margin-top: 10px;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px 14px;
+}
+
+.footer-links a {
+    color: #aaa;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #00ff99;
+}

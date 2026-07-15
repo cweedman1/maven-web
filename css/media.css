@@ -1,0 +1,54 @@
+.video-container {
+    padding: 12px;
+    box-shadow:
+        0 0 40px rgba(0, 255, 150, 0.08),
+        0 0 80px rgba(0, 255, 150, 0.05);
+}
+
+video {
+    display: block;
+    width: 100%;
+    border-radius: 6px;
+    background: #050505;
+}
+
+
+.screenshot-frame {
+    overflow: hidden;
+    padding: 0;
+    box-shadow:
+        0 0 40px rgba(0, 255, 150, 0.08),
+        0 0 80px rgba(0, 255, 150, 0.04);
+}
+
+.screenshot-frame-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    min-height: 42px;
+    padding: 10px 14px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    color: #aaa;
+    font-size: 13px;
+}
+
+.screenshot-frame-title {
+    color: #e7e7e7;
+    font-weight: 700;
+}
+
+.screenshot-frame .screenshot {
+    border-radius: 0;
+    box-shadow: none;
+}
+
+
+.screenshot {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    box-shadow:
+        0 0 40px rgba(0, 255, 150, 0.08),
+        0 0 80px rgba(0, 255, 150, 0.04);
+}

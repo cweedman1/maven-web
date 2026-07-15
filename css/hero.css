@@ -1,0 +1,149 @@
+.hero,
+.hero-small {
+    position: relative;
+    text-align: center;
+    padding: 96px 20px 56px;
+}
+
+.hero-atmosphere {
+    isolation: isolate;
+    overflow: hidden;
+    min-height: 430px;
+    padding-top: 118px;
+    background:
+        linear-gradient(180deg, rgba(5, 5, 5, var(--hero-top-shade, 0.56)), rgba(5, 5, 5, var(--hero-bottom-shade, 0.8)) 72%, #050505),
+        radial-gradient(circle at 50% 22%, rgba(0, 255, 153, var(--hero-accent-alpha, 0.12)), transparent 38%),
+        var(--hero-bg) var(--hero-position, center center) / cover no-repeat;
+}
+
+.hero-small.hero-atmosphere {
+    min-height: 340px;
+    padding-top: 96px;
+    padding-bottom: 64px;
+}
+
+.hero-atmosphere::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background:
+        linear-gradient(90deg, rgba(5, 5, 5, var(--hero-side-left, 0.86)), rgba(5, 5, 5, var(--hero-side-center, 0.34)) 48%, rgba(5, 5, 5, var(--hero-side-right, 0.76))),
+        radial-gradient(circle at 50% 48%, transparent 0, rgba(5, 5, 5, var(--hero-vignette, 0.58)) 72%);
+    pointer-events: none;
+}
+
+.hero-atmosphere::after {
+    content: "";
+    position: absolute;
+    inset: auto 0 0;
+    height: 1px;
+    z-index: -1;
+    background: rgba(0, 255, 153, 0.16);
+}
+
+.hero-home {
+    --hero-bg: url("../assets/hero/homepage_hero_new-1800.webp");
+    --hero-position: center 44%;
+    --hero-top-shade: 0.44;
+    --hero-bottom-shade: 0.74;
+    --hero-side-left: 0.78;
+    --hero-side-center: 0.24;
+    --hero-side-right: 0.68;
+    --hero-vignette: 0.5;
+    --hero-accent-alpha: 0.14;
+}
+
+.hero-knowledge {
+    --hero-bg: url("../assets/hero/knowledgecenter_hero-1800.webp");
+    --hero-position: center 48%;
+    --hero-top-shade: 0.48;
+    --hero-bottom-shade: 0.72;
+    --hero-side-left: 0.78;
+    --hero-side-center: 0.26;
+    --hero-side-right: 0.68;
+    --hero-vignette: 0.5;
+}
+
+.hero-qapi {
+    --hero-bg: url("../assets/hero/qapi_hero-1800.webp");
+    --hero-position: center 45%;
+    --hero-top-shade: 0.45;
+    --hero-bottom-shade: 0.69;
+    --hero-side-left: 0.74;
+    --hero-side-center: 0.24;
+    --hero-side-right: 0.64;
+    --hero-vignette: 0.47;
+}
+
+.hero-casper {
+    --hero-bg: url("../assets/hero/casper_hero-1800.webp");
+    --hero-position: center 46%;
+    --hero-top-shade: 0.45;
+    --hero-bottom-shade: 0.69;
+    --hero-side-left: 0.74;
+    --hero-side-center: 0.24;
+    --hero-side-right: 0.64;
+    --hero-vignette: 0.47;
+}
+
+.hero-regulatory {
+    --hero-bg: url("../assets/hero/regulatory_hero-1800.webp");
+    --hero-position: center 52%;
+    --hero-top-shade: 0.5;
+    --hero-bottom-shade: 0.74;
+    --hero-side-left: 0.8;
+    --hero-side-center: 0.28;
+    --hero-side-right: 0.7;
+    --hero-vignette: 0.52;
+}
+
+.hero-compliance {
+    --hero-bg: url("../assets/hero/hero-compliance-documents-1800.webp");
+    --hero-position: center 48%;
+}
+
+.hero-investigations {
+    --hero-bg: url("../assets/hero/hero-investigations-1800.webp");
+    --hero-position: center 36%;
+    --hero-side-center: 0.27;
+    --hero-vignette: 0.52;
+}
+
+.hero-intelligence {
+    --hero-bg: url("../assets/hero/hero-system-intelligence-1800.webp");
+    --hero-position: center 46%;
+}
+
+.hero h1 {
+    font-size: 56px;
+    line-height: 1.05;
+    margin: 0 0 12px;
+    letter-spacing: 0;
+}
+
+.hero-small h1 {
+    font-size: 44px;
+    line-height: 1.12;
+    margin: 0 0 12px;
+    letter-spacing: 0;
+}
+
+.hero p,
+.hero-small p,
+.muted {
+    color: #aaa;
+}
+
+.hero p,
+.hero-small p {
+    max-width: 720px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.55;
+}
+
+.hero-atmosphere h1,
+.hero-atmosphere p {
+    text-shadow: 0 2px 22px rgba(0, 0, 0, 0.72);
+}

@@ -1,0 +1,113 @@
+.breadcrumb {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 22px 20px 0;
+    color: #888;
+    font-size: 13px;
+}
+
+.breadcrumb a {
+    color: #aaa;
+    text-decoration: none;
+}
+
+.hub-hero {
+    padding-bottom: 40px;
+}
+
+.resource-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(240px, 0.8fr);
+    gap: 18px;
+    align-items: start;
+}
+
+.resource-panel,
+.reference-panel,
+.related-resources {
+    background: linear-gradient(145deg, #0f0f0f, #080808);
+    border: 1px solid rgba(0, 255, 150, 0.12);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.resource-panel h2,
+.reference-panel h2,
+.related-resources h2 {
+    font-size: 22px;
+}
+
+.resource-list,
+.reference-list {
+    display: grid;
+    gap: 12px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.resource-list a,
+.reference-list a {
+    display: block;
+    position: relative;
+    color: #f4f4f4;
+    text-decoration: none;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.resource-list strong,
+.reference-list strong {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.resource-list a strong::after,
+.reference-list a strong::after {
+    content: " ->";
+    color: #00ff99;
+    font-weight: 700;
+}
+
+.resource-list a:hover,
+.reference-list a:hover {
+    color: #00ff99;
+    transform: translateX(2px);
+}
+
+.resource-list a:hover span,
+.reference-list a:hover span {
+    color: #cfcfcf;
+}
+
+.resource-list span,
+.reference-list span,
+.resource-note {
+    display: block;
+    color: #aaa;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.reference-list li {
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.reference-list li:last-child {
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+
+.source-list {
+    display: grid;
+    gap: 10px;
+    padding-left: 18px;
+}
+
+.source-list a {
+    color: #d8ffe9;
+}
+
+.hub-visual {
+    margin-top: 18px;
+}

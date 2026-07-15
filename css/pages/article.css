@@ -1,0 +1,12 @@
+.documentation-surface {
+    max-width: none;
+    background:
+        linear-gradient(180deg, rgba(5, 5, 5, 0.92), rgba(5, 5, 5, 0.84)),
+        url("../../assets/hero/texture-operational-journal-960.webp") center 30% / cover no-repeat;
+}
+
+.documentation-surface > * {
+    max-width: 900px;
+    margin-right: auto;
+    margin-left: auto;
+}
