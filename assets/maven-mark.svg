@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">Maven Compliance mark</title>
+  <desc id="desc">Two folded planes form an M and meet at a closure bar.</desc>
+  <rect width="64" height="64" rx="11" fill="#05070c"/>
+  <path d="M10 12h11l11 15v15L20 26v26H10z" fill="#20c7ff"/>
+  <path d="M54 12H43L32 27v15l12-16v26h10z" fill="#eaf3ff"/>
+  <path d="M26 44h12v8H26z" fill="#ff6948"/>
+  <path d="M29 31l3-4 3 4-3 5z" fill="#7657ff"/>
+</svg>
